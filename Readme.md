@@ -62,11 +62,16 @@ before we invest in the *visual* tools for making them concise.
 **Taking Mu for a spin**
 
 First install [Racket](http://racket-lang.org) (just for the initial
-prototype). Then:
+prototype; last tested with v6.3). Then:
 
 ```shell
+  $ git clone https://github.com/akkartik/mu0
   $ cd mu
   $ git clone http://github.com/arclanguage/anarki
+  $ cd anarki
+  $   git checkout d7290130a7  # last compatible snapshot
+  $ cd ..
+  $ ./mu test mu.arc.t  # run tests
 ```
 
 As a sneak peek, here's how you compute factorial in Mu:
